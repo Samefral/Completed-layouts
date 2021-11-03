@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato-light.woff2"), url("../fonts/lato-light.woff");
+  font-weight: 300;
+}
+
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("../fonts/cormorantgaramond-mediumitalic.woff2"), url("../fonts/cormorantgaramond-mediumitalic.woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("../fonts/cormorantgaramond-regular.woff2"), url("../fonts/cormorantgaramond-regular.woff");
+    font-weight: 400;
+}
+
+body {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-weight: 500;
+  min-width: 1440px;
+  margin: 0;
+  color: #221316;
+  background-color: #fdfcfb;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0px 30px;
+}
+
+.page-main {
+  margin-top: 150px;
+}
+
+.faq-wrapper {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0px 30px;
+}
+
+.title {
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 100px;
+  margin: 0;
+}
+
+.faq-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 70px;
+}
+
+.faq-item:first-of-type {
+  border-top: 1px solid #865131;
+}
+
+.faq-item {
+  padding: 30px 0;
+  border-bottom: 1px solid #865131;
+}
+
+.faq-question {
+  font-size: 34px;
+  font-style: italic;
+  line-height: 41px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.faq-answer {
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 29px;
+  margin: 0;
+}
+
+.articles {
+  margin-top: 170px;
+  padding-top: 150px;
+  padding-bottom: 170px;
+  background-image: url("../img/articles-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.articles-title {
+  text-align: center;
+}
+
+.articles-list {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 70px;
+}
+
+.articles-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 260px;
+    background-color: #fdfcfb;
+    border: 1px solid #865131;
+    transition: opacity 0.25s;
+}
+
+.articles-link {
+  font-size: 34px;
+  font-style: italic;
+  max-width: 256px;
+  text-align: center;
+  text-decoration: none;
+  color: #221316;
+}
+
+.articles-link:hover {
+  opacity: 0.7;
+}
+
+.articles-link:active {
+  opacity: 0.5;
+}
+
+.contacts {
+  margin-top: 150px;
+}
+
+.contacts-wrapper {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0px 30px;
+}
+
+.contacts-description {
+  font-size: 22px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 29px;
+  margin-top: 30px;
+}
+
+.contacts-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  padding: 30px 0;
+  border-top: 1px solid #865131;
+  border-bottom: 1px solid #865131;
+  list-style-type: none;
+}
+
+.contacts-link {
+  font-size: 34px;
+  font-style: italic;
+  line-height: 37px;
+  text-decoration: none;
+  color: #221316;
+  transition: opacity 0.25s;
+}
+
+.contacts-link:hover {
+  opacity: 0.7;
+}
+
+.contacts-link:active {
+  opacity: 0.5;
+}
+
+.contacts-address {
+  font-size: 34px;
+  font-style: italic;
+}
+
+.footer {
+  margin-top: 170px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.copyright {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.policy {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #221316;
+  transition: opacity 0.3s;
+}
+
+.policy:hover {
+  opacity: 0.7;
+}
+
+.policy:active {
+  opacity: 0.5;
+}
+
+.button-up {
+    position: fixed;
+    right: 40px;
+    bottom: 120px;
+    width: 86px;
+    height: 86px;
+    border: 1px solid #221316;
+    border-radius: 50%;
+    background-color: #FDFCFB;
+    /* background-image: url("../img/arrow-up.svg");
+    background-position: center;
+    background-repeat: no-repeat; */
+    cursor: pointer;
+    transition: opacity 0.1s;
+}
+
+.button-up:hover {
+    opacity: 0.7;
+}
+
+.button-up:active {
+    opacity: 0.5;
+}
+
+.hidden {
+    display: none;
+}

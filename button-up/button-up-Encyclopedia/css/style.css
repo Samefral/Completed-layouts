@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "PTRoot";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-root-regular.woff2") format("woff2"),
+    url("../fonts/pt-root-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PTRoot";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/pt-root-medium.woff2") format("woff2"),
+    url("../fonts/pt-root-medium.woff") format("woff");
+}
+
+body {
+  font-family: "PTRoot", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  min-width: 1440px;
+  color: #030c22;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.article-wrapper {
+  max-width: 730px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+}
+
+.article-title {
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.article-section p {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.article-info {
+  display: flex;
+  gap: 21px;
+  font-size: 16px;
+  color: rgba(3, 12, 34, 0.6);
+  padding-top: 20px;
+  border-top: 1px solid rgba(3, 12, 34, 0.1);
+}
+
+.footer {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #041334;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.logo {
+  color: #ffffff;
+  text-decoration: none;
+  max-width: 108px;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 10px 12px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  opacity: 0.6;
+}
+
+.up-button {
+  display: none;
+  position: fixed;
+  right: 165px;
+  bottom: 165px;
+  background-color: #041334;
+  width: 45px;
+  height: 45px;
+  background-image: url("../img/arrow-up.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.up-button:hover {
+  opacity: 0.7;
+}
+
+.up-button-show {
+  display: block;
+  animation: show 0.4s linear;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
