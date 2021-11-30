@@ -192,6 +192,7 @@ body {
     height: 57px;
     color: #FAF9F7;
     background-color: #171511;
+    transition: opacity 0.38s;
 }
 
 
