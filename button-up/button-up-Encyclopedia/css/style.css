@@ -98,34 +98,27 @@ body {
 }
 
 .up-button {
-  display: none;
   position: fixed;
   right: 165px;
   bottom: 165px;
   background-color: #041334;
   width: 45px;
   height: 45px;
-  background-image: url("../img/arrow-up.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  transition: all 0.3s;
   cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s;
 }
 
 .up-button:hover {
   opacity: 0.7;
 }
 
-.up-button-show {
-  display: block;
-  animation: show 0.4s linear;
+.up-button:active {
+  opacity: 0.5;
 }
 
-@keyframes show {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.up-button-show {
+  opacity: 1;
+  pointer-events: all;
 }

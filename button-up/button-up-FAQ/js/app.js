@@ -1,7 +1,7 @@
 let btnUp = document.querySelector(".button-up");
 
 window.onscroll = function () {
-  if (pageYOffset > 1000) {
+  if (window.pageYOffset > 1000) {
     btnUp.classList.remove("hidden");
   } else {
     btnUp.classList.add("hidden");
@@ -9,5 +9,8 @@ window.onscroll = function () {
 };
 
 btnUp.addEventListener("click", function () {
-  window.scrollTo(0, 0);
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
 });

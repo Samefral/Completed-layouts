@@ -209,37 +209,21 @@ body {
   border-radius: 30px;
   box-shadow: 0px 2px 6px rgba(44, 44, 44, 0.2);
   cursor: pointer;
-  transition: all 0.3s;
-  animation: show 0.3s linear backwards;
+  transition: opacity 0.3s, background-color 0.4s;
 }
 
 .up-button:hover {
-  opacity: 0.7;
+  opacity: 0.8;
   background-color: rgba(44, 44, 44, 0.2);
-  box-shadow: 0px 2px 6px 3px rgba(44, 44, 44, 0.2);
 }
 
 .up-button:active {
-  opacity: 0.5;
-  background-color: rgba(44, 44, 44, 0.2);
-  box-shadow: 0px 2px 6px 3px rgba(44, 44, 44, 0.2);
-}
-
-.arrow-up {
-  width: 16px;
-  height: 8px;
-  background-image: url("../img/arrow-up.svg");
+  opacity: 0.6;
+  background-color: rgba(44, 44, 44, 0.4);
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
-@keyframes show {
-  0% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-  }
-}

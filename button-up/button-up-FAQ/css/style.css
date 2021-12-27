@@ -223,11 +223,12 @@ body {
     border: 1px solid #221316;
     border-radius: 50%;
     background-color: #FDFCFB;
-    /* background-image: url("../img/arrow-up.svg");
-    background-position: center;
-    background-repeat: no-repeat; */
     cursor: pointer;
-    transition: opacity 0.1s;
+    transition: opacity 0.4s;
+    pointer-events: all;
+    /* opacity: 1;
+    visibility: visible;
+    transition: opacity 0.4s, visibility 0.4s; */
 }
 
 .button-up:hover {
@@ -239,5 +240,8 @@ body {
 }
 
 .hidden {
-    display: none;
+    pointer-events: none;
+    opacity: 0;
+    /* opacity: 0;
+    visibility: hidden; */
 }
